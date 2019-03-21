@@ -49,49 +49,54 @@
     </div>
   </nav>
 
-  <!-- Header -->
-  <header class="masthead bg-primary">
+  <h1 class="header-mobile">Alfie Mojar Bacani</h1>
+
+  <!-- About Section -->
+  <section class="bg-primary mb-0" id="about">
     <div class="container">
-      <h2>I'm a web developer, I can help you build your next project.</h2>
+      <div class="row">
+        <div class="col-lg-6 mr-auto profile">
+          <img src="img/profile-alfie.jpg" alt="Alfie Mojar Bacani">
+        </div>
+        <div class="col-lg-6 ml-auto">
+          <h2>Hi, my name is Alfie</h2>
+          <p>I'm a web developer from the Philippines.</p> 
+          <p>Since starting my journey in Information Technology industry nearly 8 years ago, I've done work for companies and professionals from Philippines, China, US, Sweden, UK and Australia.</p>
+          <p>I specialize in building websites and applications specific to the business needs of my clients ranging from individuals all the way to large businesses.</p>
+          <p>At the moment, I'm working as a Senior Web Developer for an Australian Company. Outside of work, I enjoy traveling to different places and I love drinking beer.</p>
+          <p>If you wanna get <span style="text-decoration: line-through; color: #b7b7b7">a drinking buddy</span> in touch and talk to me about your business goals, feel free to send me a message to <a href="mailto:bacani.fie04.ab@gmail.com">bacani.fie04.ab@gmail.com</a> and we'll see how we can create something amazing together. Cheers!</p>
+          <p class="social"><a href="mailto:bacani.fie04.ab@gmail.com">Email</a> <a href="https://www.facebook.com/alfie.m.bacani">Facebook</a> <a href="https://www.linkedin.com/in/alfie-bacani-2bb99aa6/">LinkedIn</a></p>
+        </div>
+      </div>
     </div>
-  </header>
+  </section>
 
   <!-- Portfolio Grid Section -->
   <section class="portfolio" id="portfolio">
     <div class="container">
-      <h2 class="text-center text-uppercase text-secondary">Recent Work</h2>
+      <h2 class="text-center text-secondary">I can help you build your next project.</h2>
       <div class="row">
         <div class="col-sm-12">
-          <a href="https://aomnl.com/" target="_blank" title="aomnl.com"><img src="img/work/ao.png" alt="AO"></a>
+          <h3>AO The Best of Everything</h3>
+          <h4><a href="https://aomnl.com/" target="_blank" title="aomnl.com">aomnl.com</a> | online magazine | development</h4>
+          <a href="https://aomnl.com/" target="_blank" title="aomnl.com">
+            <img src="img/work/ao.png" alt="AO">
+          </a>
         </div>
         <div class="col-sm-12">
+          <h3>Travinasia Travel and Tours</h3>
+          <h4><a href="https://travinasia.com/" target="_blank" title="travinasia.com">travinasia.com</a> | travel agency | development</h4>
           <a href="https://travinasia.com/" target="_blank" title="travinasia.com"><img src="img/work/travinasia.png" alt="Travinasia"></a>
         </div>
         <div class="col-sm-12">
+          <h3>Sparecrop Premium Motorcycle Parts</h3>
+          <h4><a href="https://sparecrop.com/" target="_blank" title="sparecrop.com">sparecrop.com</a> | ecommerce | development</h4>
           <a href="https://sparecrop.com/" target="_blank" title="sparecrop.com"><img src="img/work/sparecrop.png" alt="Sparecrop"></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="bg-primary mb-0" id="about">
-    <div class="container">
-      <h2 class="text-center text-uppercase">About Me</h2>
-      <div class="row">
-        <div class="col-lg-6 ml-auto">
-          <p>Hey I'm Alfie a web developer from the Philippines. Since starting my journey in Information Technology industry nearly 8 years ago, I've done work for companies and professionals from Philippines, China, US, Sweden, UK and Australia.</p>
-          <p>I specialize in building websites and applications specific to the business needs of my clients ranging from individuals all the way to large businesses.</p>
-          <p>At the moment, I'm working as a Senior Web Developer for an Australian Company. Outside of work, I enjoys traveling to different places and I love drinking beer.</p>
-          <p>If you wanna get <span style="text-decoration: line-through;">a drinking buddy</span> in touch and talk to me about your business goals, feel free to send me a message to <a href="mailto:bacani.fie04.ab@gmail.com">bacani.fie04.ab@gmail.com</a> and we'll see how we can create something amazing together. Cheers!</p>
-          <p class="social">Say hello <br/><a href="https://abacani4.github.io/">alfiebacani.github.io</a> <a href="https://www.facebook.com/alfie.m.bacani">Facebook</a> <a href="https://www.linkedin.com/in/alfie-bacani-2bb99aa6/">LinkedIn</a></p>
-        </div>
-        <div class="col-lg-6 mr-auto profile">
-          <img src="img/profile-alfie.jpg" alt="Alfie Mojar Bacani">
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Footer -->
   <footer>
@@ -108,13 +113,74 @@
 
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
+  <script type="text/javascript">
+    (function($) {
+      "use strict"; // Start of use strict
 
-  <script src="js/freelancer.min.js"></script>
+      // Smooth scrolling using jQuery easing
+      $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: (target.offset().top - 70)
+            }, 1000, "easeInOutExpo");
+            return false;
+          }
+        }
+      });
+
+      // Scroll to top button appear
+      $(document).scroll(function() {
+        var scrollDistance = $(this).scrollTop();
+        if (scrollDistance > 100) {
+          $('.scroll-to-top').fadeIn();
+        } else {
+          $('.scroll-to-top').fadeOut();
+        }
+      });
+
+      // Closes responsive menu when a scroll trigger link is clicked
+      $('.js-scroll-trigger').click(function() {
+        $('.navbar-collapse').collapse('hide');
+      });
+
+      // Activate scrollspy to add active class to navbar items on scroll
+      $('body').scrollspy({
+        target: '#mainNav',
+        offset: 80
+      });
+
+      // Collapse Navbar
+      var navbarCollapse = function() {
+        if ($("#mainNav").offset().top > 100) {
+          $("#mainNav").addClass("navbar-shrink");
+        } else {
+          $("#mainNav").removeClass("navbar-shrink");
+        }
+      };
+      // Collapse now if page is not at top
+      navbarCollapse();
+      // Collapse the navbar when page is scrolled
+      $(window).scroll(navbarCollapse);
+
+      // Floating label headings for the contact form
+      $(function() {
+        $("body").on("input propertychange", ".floating-label-form-group", function(e) {
+          $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
+        }).on("focus", ".floating-label-form-group", function() {
+          $(this).addClass("floating-label-form-group-with-focus");
+        }).on("blur", ".floating-label-form-group", function() {
+          $(this).removeClass("floating-label-form-group-with-focus");
+        });
+      });
+
+    })(jQuery); // End of use strict
+
+  </script>
 
 </body>
 
