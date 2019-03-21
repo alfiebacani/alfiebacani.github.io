@@ -470,14 +470,19 @@ h4 a, h4 a:hover {
     display: none;
 }
 @media(max-width: 991px) {
+  section {
+    padding: 2.5rem 0;
+  }
   .header-mobile {
       text-align: center;
       padding-top: 10px;
       display: block;
+      font-size: 2rem;
   }
 
   .text-secondary {
-    font-size: 1.5rem;
+    font-size: 1.5rem;    
+    text-transform: uppercase;
   }
   h3 {
     font-size: 1.5rem;
