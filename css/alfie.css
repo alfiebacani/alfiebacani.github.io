@@ -440,10 +440,14 @@ a:focus, a:hover, a:active {
 #about .social a {
   margin-right: 20px;
 }
-#portfolio img {
+#portfolio .desktop img {
   max-width: 100%;    
   box-shadow: 0 2px 4px 0 rgba(46, 62, 72, 0.12);
   border: solid 1px #e5e5e5;
+}
+
+#portfolio .mobile img {
+  max-width: 100%;
 }
 
 h3 {
