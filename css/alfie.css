@@ -464,8 +464,11 @@ h4 {
   color: #b7b7b7;
 }
 h4 a, h4 a:hover {
-  color: #b7b7b7;
+  color: #413d41;
   text-decoration: none;
+}
+#portfolio .row {
+  margin-bottom:  80px;
 }
 #portfolio .col-sm-12 {
   margin-bottom: 100px;
